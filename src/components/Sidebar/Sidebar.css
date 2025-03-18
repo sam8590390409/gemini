@@ -1,0 +1,119 @@
+.sidebar {
+    width: 150px;
+    height: 90vh;
+    background-color: #f4f4f4;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu {
+    width: 24px;
+    cursor: pointer;
+}
+
+.new-chat {
+    display: flex;
+    align-items: center;
+ 
+    gap: 10px;
+    padding: 5px;
+    background-color: #e0e0e0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-chat:hover {
+    background-color: #655555;
+}
+
+.new-chat img {
+    width: 20px;
+}
+
+.new-chat p {
+    font-size: 16px;
+}
+
+.recent {
+    margin-top: 10px;
+    animation: fadeIn 1.5s;
+}
+
+.recent-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.recent-entry {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.recent-entry:hover {
+    background-color: #d6d6d6;
+}
+
+.recent-entry img {
+    width: 20px;
+}
+
+.recent-entry p {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bottom-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bottom-item:hover {
+    background-color: #d6d6d6;
+}
+
+.bottom-item img {
+    width: 20px;
+}
+
+.bottom-item p {
+    font-size: 14px;
+}
+
+ @media (max-width:600px) {
+    
+    .sidebar{
+        display: none;
+    }
+ }
