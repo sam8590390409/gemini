@@ -32,7 +32,7 @@ const Main = () => {
             {/* Greeting Message */}
             <div className="greet">
               <p>
-                <span>Hello, Dev..</span>
+                <span>Hello, sam..</span>
               </p>
             </div>
 
@@ -92,11 +92,18 @@ const Main = () => {
             <div>
               <img src={assets.gallery_icon} alt="Gallery Icon" />
               <img src={assets.mic_icon} alt="Microphone Icon" />
-              {input && <img onClick={() => onSent()} src={assets.send_icon} alt="Send Icon" />}
+              {input && (
+                <img
+                  onClick={() => onSent()}
+                  src={assets.send_icon}
+                  alt="Send Icon"
+                />
+              )}
             </div>
           </div>
           <p className="bottom-info">
-            Gemini may display inaccurate information, so double-check its responses.
+            Gemini may display inaccurate information, so double-check its
+            responses.
           </p>
         </div>
       </div>
